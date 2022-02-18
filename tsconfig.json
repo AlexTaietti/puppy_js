@@ -1,0 +1,24 @@
+{
+   "compilerOptions": {
+      "esModuleInterop": true,
+      "target": "es2015",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "skipLibCheck": true,
+      "noUnusedLocals": true,
+      "forceConsistentCasingInFileNames": true,
+      "noUnusedParameters": true,
+      "resolveJsonModule": true,
+      "noImplicitAny": true,
+      "outDir": "build",
+      "sourceMap": true,
+      "lib": [
+         "es2015",
+         "dom"
+      ]
+   },
+   "emit": "sourceMap",
+   "include": [
+      "src"
+   ]
+}

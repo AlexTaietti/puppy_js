@@ -1,0 +1,33 @@
+{
+  "name": "puppy",
+  "version": "1.0.0",
+  "description": "a puppeteer based crawler",
+  "repository": "https://github.com/AlexTaietti/puppy",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && node -r source-map-support/register ./build/index.js",
+    "dev": "tsc-watch --onSuccess \"node -r source-map-support/register ./build/index.js\"",
+    "heavy": "tsc && node --max-old-space-size=1024 -r source-map-support/register ./build/index.js",
+    "super-heavy": "tsc && node --max-old-space-size=4096 -r source-map-support/register ./build/index.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "puppeteer": "^10.1.0",
+    "puppeteer-extra": "^3.1.18",
+    "puppeteer-extra-plugin-stealth": "^2.7.8",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.7",
+    "express": "^4.17.1",
+    "json2csv": "^5.0.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/json2csv": "^5.0.3",
+    "@types/lodash": "^4.14.172",
+    "@types/puppeteer": "^5.4.4",
+    "source-map-support": "^0.5.19",
+    "tsc-watch": "^4.4.0",
+    "typescript": "^4.3.5"
+  }
+}

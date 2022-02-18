@@ -1,0 +1,14 @@
+# node
+/node_modules
+
+# build
+/build
+
+# credentials
+.env
+
+# crawl results
+/results
+
+# notes
+*.txt
