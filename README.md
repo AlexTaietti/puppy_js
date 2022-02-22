@@ -1,6 +1,8 @@
 # Puppy
 
-This is a puppeteer based scraper so it uses an headless version of Chromium it ships with, and which is the only version guarateed to work with the library, that being said it can be hooked up to any browser.
+<p align="center"><img src="./preview/puppy.png" width="200px"/></p>
+
+Puppy is a puppeteer based scraper so it uses an headless version of Chromium it ships with, and which is the only version guarateed to work with the library, that being said it can be hooked up to any browser.
 
 Using an headless browser is necessary since any website worth scraping is gonna need to be populated with data by running some client side js after getting its HTML.
 
