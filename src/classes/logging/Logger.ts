@@ -39,15 +39,15 @@ class Logger {
 
    };
 
-   prefix?: string;
+   loggerLabel?: string;
 
-   constructor(prefix?: string) {
-      if (!prefix) return;
-      const prefixString = this.makeMagenta(prefix);
-      this.prefix = `${prefixString}: `;
+   constructor(loggerLabel?: string) {
+      if (!loggerLabel) return;
+      const prefixString = this.makeMagenta(loggerLabel);
+      this.loggerLabel = `${prefixString}: `;
    }
 
-   public log(message: string | number) { console.log(this.prefix ? `${this.prefix}${message}` : message); }
+   public log(message: string | number) { console.log(this.loggerLabel ? `${this.loggerLabel}${message}` : message); }
 
    public logError(message: string | number) { this.log(`${this.palette.fg.red}${message}${this.palette.reset}`); }
    public logUpdate(message: string | number) { this.log(`${this.palette.fg.yellow}${message}${this.palette.reset}`); }
